@@ -1,15 +1,15 @@
-public class Food extends Item{
-    int healingPower;
+public class Weapon extends Item{
+    int strength;
 
-    public Food(String name, int hp){
+    public Weapon(String name, int strength){
         super(name);
-        healingPower = hp;
+        this.strength = strength;
 
     }
 
 
     @Override
     public void use() {
-        System.out.println(this.name + " was used for " + this.healingPower + " of healing");
+        System.out.println(this.name + " was used for " + this.strength + " of damage");
     }
 }
